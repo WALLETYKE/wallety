@@ -10,29 +10,7 @@ class _StatsState extends State<Stats> {
   Widget build(BuildContext context) {
     return Scaffold(
       //appbar is a child of the scaffold
-      appBar: AppBar(
-        title: Text("Wallety"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.comment),
-            tooltip: 'Comment Icon',
-            onPressed: () {},
-          ), //IconButton
-          IconButton(
-            icon: Icon(Icons.settings),
-            tooltip: 'Setting Icon',
-            onPressed: () {},
-          ), //IconButton
-        ], //<Widget>[]
-        backgroundColor: Colors.greenAccent[400],
-        elevation: 50.0,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          tooltip: 'Menu Icon',
-          onPressed: () {},
-        ), //IconButton
-        brightness: Brightness.dark,
-      ), //AppBar
+      //AppBar
 
       //Body is a child of the scaffold
       body: Column(

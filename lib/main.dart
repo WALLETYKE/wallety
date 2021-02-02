@@ -3,6 +3,8 @@ import 'package:wallety/screens/profile.dart';
 import 'screens/HomePage.dart';
 import 'screens/stats.dart';
 import 'screens/profile.dart';
+import 'screens/SideDrawer.dart';
+
 
 void main() => runApp(App());
 
@@ -34,6 +36,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: SideDrawer(),
       //appbar is a child of the scaffold
       appBar: AppBar(
         title: Text("Wallety"),
@@ -49,13 +52,13 @@ class _HomeState extends State<Home> {
             onPressed: () {},
           ), //IconButton
         ], //<Widget>[]
-        backgroundColor: Colors.greenAccent[400],
-        elevation: 50.0,
+        backgroundColor: Colors.green[400],
+        /*elevation: 50.0,
         leading: IconButton(
           icon: Icon(Icons.menu),
           tooltip: 'Menu Icon',
           onPressed: () {},
-        ), //IconButton
+        ), */ //IconButton
         brightness: Brightness.dark,
       ), //AppBar
 

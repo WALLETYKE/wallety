@@ -1,141 +1,205 @@
 import 'package:flutter/material.dart';
 
-class Profile extends StatefulWidget {
-  @override
-  _ProfileState createState() => _ProfileState();
-}
-
-class _ProfileState extends State<Profile> {
+class ProfileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    body: Stack(children: [
-      Column(
+      body: Column(
         children: [
+          //child of the Column
           Container(
-            height: 300,
-            decoration: BoxDecoration(
-              color: Colors.green,
-              /*gradient: LinearGradient(
-                      colors: [Color(0XFF00B686), Color(0XFF00838F)]),*/
-            ),
-            child: Padding(
-                padding: const EdgeInsets.All(left: 50, right: 20.0, top: 30),
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Row(children: [
-                      Container(
-                        width: 80.0,
-                        height: 80.0,
-                        decoration: BoxDecoration(
-                          color: Colors.green,
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.black.withOpacity(.1),
-                                blurRadius: 8,
-                                spreadRadius: 3)
-                          ],
-                          border: Border.all(
-                            width: 1.5,
-                            color: Colors.white,
-                          ),
-                          borderRadius: BorderRadius.circular(40.0),
-                        ),
-                        padding: EdgeInsets.all(5),
-                        child: CircleAvatar(
-                          backgroundImage: AssetImage('assets/img/img1.jpg'),
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Colors.blue, Colors.green]
+                  )
+              ),
+              child: Container(
+                width: double.infinity,
+                height: 350.0,
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircleAvatar(backgroundImage: AssetImage('assets/img/img1.jpg'),
+                        radius: 50.0,
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        "Eunice Kahiga",
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          color: Colors.white,
                         ),
                       ),
-                    ]),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Eunice Kahiga",
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          children: [
-                            SizedBox(
-                              width: 10,
-                            ),
-                            RichText(
-                              text: TextSpan(
-                                  text: "ksh 5320",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Card(
+                        margin: EdgeInsets.symmetric(horizontal: 20.0,vertical: 5.0),
+                        clipBehavior: Clip.antiAlias,
+                        color: Colors.white,
+                        elevation: 5.0,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0,vertical: 22.0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+
                                   children: [
-                                    TextSpan(
-                                        text: ".50",
-                                        style: TextStyle(color: Colors.white38))
-                                  ]),
-                            )
-                          ],
-                        )
-                      ],
-                    )
-                  ],
-                )),
+                                    Text(
+                                      "Income",
+                                      style: TextStyle(
+                                        color: Colors.redAccent,
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 5.0,
+                                    ),
+                                    Text(
+                                      "1200",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.pinkAccent,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+
+                                  children: [
+                                    Text(
+                                      "Expense",
+                                      style: TextStyle(
+                                        color: Colors.redAccent,
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 5.0,
+                                    ),
+                                    Text(
+                                      "21.2K",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.pinkAccent,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+
+                                  children: [
+                                    Text(
+                                      "Saved",
+                                      style: TextStyle(
+                                        color: Colors.redAccent,
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 5.0,
+                                    ),
+                                    Text(
+                                      "1200",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.pinkAccent,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              )
           ),
-          Expanded(
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              color: Colors.grey.shade100,
-              child: ListView(
-                padding: EdgeInsets.only(top: 75),
+          //child of the Column
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 30.0,horizontal: 16.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Activity",
+                    "Info:",
                     style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey),
+                        color: Colors.redAccent,
+                        fontStyle: FontStyle.normal,
+                        fontSize: 28.0
+                    ),
                   ),
                   SizedBox(
-                    height: 5,
+                    height: 10.0,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Text(
-                    "Categories",
+                  Text('My name is Eunice and I am  a freelance mobile app developper.\n'
+                      'Having Experiece in Flutter and Android',
                     style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey),
+                      fontSize: 22.0,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.black,
+                      letterSpacing: 2.0,
+                    ),
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  /*buildCategoryCard(Icons.fastfood, "Food", 120, 20),
-                      buildCategoryCard(Icons.flash_on, "Utilities", 430, 17),
-                      buildCategoryCard(Icons.fastfood, "Food", 120, 20),*/
                 ],
               ),
             ),
-          )
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          //child of the Column
+          Container(
+            width: 300.00,
+
+            child: RaisedButton(
+                onPressed: (){},
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(80.0)
+                ),
+                elevation: 0.0,
+                padding: EdgeInsets.all(0.0),
+                child: Ink(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                        begin: Alignment.centerRight,
+                        end: Alignment.centerLeft,
+                        colors: [Colors.pink,Colors.pinkAccent]
+                    ),
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  child: Container(
+                    constraints: BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
+                    alignment: Alignment.center,
+                    child: Text("Edit Profile",
+                      style: TextStyle(color: Colors.white, fontSize: 26.0, fontWeight:FontWeight.w300),
+                    ),
+                  ),
+                )
+            ),
+          ),
         ],
       ),
-      //Floating card start
-      
-    ]));
+    );
   }
 }

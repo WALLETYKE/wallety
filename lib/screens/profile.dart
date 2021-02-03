@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ProfileApp extends StatelessWidget {
+class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,16 +8,18 @@ class ProfileApp extends StatelessWidget {
         children: [
           //child of the Column
           Container(
+            
               decoration: BoxDecoration(
+                color: Colors.green[400],
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.blue, Colors.green]
+                      colors: [Colors.green, Colors.white]
                   )
               ),
               child: Container(
                 width: double.infinity,
-                height: 350.0,
+                height: 250.0,
                 child: Center(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,7 +39,7 @@ class ProfileApp extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 10.0,
+                        height: 5.0,
                       ),
                       Card(
                         margin: EdgeInsets.symmetric(horizontal: 20.0,vertical: 5.0),
@@ -64,7 +66,7 @@ class ProfileApp extends StatelessWidget {
                                       height: 5.0,
                                     ),
                                     Text(
-                                      "1200",
+                                      "2170",
                                       style: TextStyle(
                                         fontSize: 20.0,
                                         color: Colors.pinkAccent,
@@ -89,7 +91,7 @@ class ProfileApp extends StatelessWidget {
                                       height: 5.0,
                                     ),
                                     Text(
-                                      "21.2K",
+                                      "450",
                                       style: TextStyle(
                                         fontSize: 20.0,
                                         color: Colors.pinkAccent,
@@ -135,7 +137,7 @@ class ProfileApp extends StatelessWidget {
           //child of the Column
           Container(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 30.0,horizontal: 16.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 16.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -149,7 +151,7 @@ class ProfileApp extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 5.0,
                   ),
                   Text('My name is Eunice and I am  a freelance mobile app developper.\n'
                       'Having Experiece in Flutter and Android',
@@ -166,16 +168,16 @@ class ProfileApp extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20.0,
+            height: 5.0,
           ),
           //child of the Column
           Container(
-            width: 300.00,
+            width: 200.00,
 
             child: RaisedButton(
                 onPressed: (){},
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(80.0)
+                    borderRadius: BorderRadius.circular(50.0)
                 ),
                 elevation: 0.0,
                 padding: EdgeInsets.all(0.0),
@@ -189,13 +191,45 @@ class ProfileApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30.0),
                   ),
                   child: Container(
-                    constraints: BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
+                    constraints: BoxConstraints(maxWidth: 250.0, minHeight: 30.0),
                     alignment: Alignment.center,
                     child: Text("Edit Profile",
-                      style: TextStyle(color: Colors.white, fontSize: 26.0, fontWeight:FontWeight.w300),
+                      style: TextStyle(color: Colors.white, fontSize: 18.0, fontWeight:FontWeight.w300),
                     ),
                   ),
                 )
+            ),
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 30.0,horizontal: 16.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "goal:",
+                    style: TextStyle(
+                        color: Colors.redAccent,
+                        fontStyle: FontStyle.normal,
+                        fontSize: 28.0
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Text('Save enough money,Save enough money.\n'
+                      'save enough money',
+                    style: TextStyle(
+                      fontSize: 22.0,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.black,
+                      letterSpacing: 2.0,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],

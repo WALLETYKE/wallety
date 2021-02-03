@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
 
   final tabs = [
     Center(child: HomePage()),
-    Center(child: Stats()),
+    Center(child: Header()),
     Center(child: Profile()),
   ];
 

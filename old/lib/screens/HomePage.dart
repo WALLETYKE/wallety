@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallety/screens/pushed_screen.dart';
 
 class HomePage extends StatelessWidget {
   static const route = '/first';
@@ -6,8 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Expense')),
-      body: Stack(children: [
+        body: Stack(children: [
       Column(
         children: [
           Container(

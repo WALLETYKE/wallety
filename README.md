@@ -1,18 +1,33 @@
-Name: OpenSource Fullstack Flutter app.
+**Name:** **OpenSource Fullstack Flutter app.**
 
-Goal: To Create a Fullstack Flutter app from scratch (ofcourse following several tutorials) using the below mentioned frameworks.
+**Goal:** To Create a Fullstack Flutter app from scratch (ofcourse following several tutorials) using the below mentioned frameworks.
 
-Frameworks: We will be using Flutter and Firebase,other Frameworks or libraries might be integrated later on if need be.
+**Frameworks:** We will be using Flutter and Firebase,other Frameworks or libraries might be integrated later on if need be.
 
-Features; *1.Tracking and analysing Expenses *2.User Profiles *3.Danger Zone for when you spend more than you earn. *4.loopholes/Things you could do to save more money. *5.Challenges to see who saved more.
+**Features;**
+* 1.Tracking and analysing Expenses 
+* 2.User Profiles 
+* 3.Danger Zone for when you spend more than you earn. 
+* 4.loopholes/Things you could do to save more money. 
+* 5.Challenges to see who saved more.
 
-Stage one: 1st to 8th February-Design of basic pages;
+**Stage one: 1st to 8th February-Design of basic pages;**
 
-*landing page *Profielpage *stats page *splash screen
+* landing page 
+* Profielpage 
+* stats page 
+* splash screen
 
 
-Progress as of 6th january:See the screenshots below;
+**Progress as of 6th january:See the screenshots below;**
 
+
+**Get Started:**
+```
+git clone https://github.com/WALLETYKE/wallety
+flutter pub get
+flutter run
+```
 
 
 

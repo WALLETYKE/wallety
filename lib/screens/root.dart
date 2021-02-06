@@ -1,42 +1,47 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:wallety/bloc/navigation_bloc.dart';
+import 'package:wallety/router/router.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:wallety/providers/navigation_provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-/// Navigation entry point for app.
 class Root extends StatelessWidget {
-  static const route = '/';
-
   @override
   Widget build(BuildContext context) {
-    return Consumer<NavigationProvider>(
-      builder: (context, provider, child) {
-        // Create bottom navigation bar items from screens.
-        final bottomNavigationBarItems = provider.screens
-            .map((screen) => BottomNavigationBarItem(
-                icon: Icon(Icons.home), title: Text(screen.title)))
-            .toList();
+    final bloc = context.bloc<NavigationBloc>();
 
-        // Initialize [Navigator] instance for each screen.
-        final screens = provider.screens
-            .map(
-              (screen) => Navigator(
-                key: screen.navigatorState,
-                onGenerateRoute: screen.onGenerateRoute,
-              ),
-            )
-            .toList();
-
+    return BlocBuilder<NavigationBloc, int>(
+      cubit: bloc,
+      builder: (context, state) {
         return WillPopScope(
-          onWillPop: () async => provider.onWillPop(context),
+          onWillPop: bloc.onWillPop,
           child: Scaffold(
             body: IndexedStack(
-              children: screens,
-              index: provider.currentTabIndex,
+              index: state,
+              children: List.generate(bloc.tabs.length, (index) {
+                final tab = bloc.tabs[index];
+
+                return TickerMode(
+                  enabled: index == state,
+                  child: Offstage(
+                    offstage: index != state,
+                    child: ExtendedNavigator(
+                      initialRoute: tab.initialRoute,
+                      name: tab.name,
+                      router: AppRouter(),
+                    ),
+                  ),
+                );
+              }),
             ),
             bottomNavigationBar: BottomNavigationBar(
-              items: bottomNavigationBarItems,
-              currentIndex: provider.currentTabIndex,
-              onTap: provider.setTab,
+              onTap: bloc.add,
+              currentIndex: state,
+              items: bloc.tabs.map((tab) {
+                return BottomNavigationBarItem(
+                  icon: tab.icon,
+                  label: tab.name,
+                );
+              }).toList(),
             ),
           ),
         );

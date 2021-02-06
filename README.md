@@ -1,6 +1,6 @@
 **Name:** **OpenSource Fullstack Flutter app.**
 
-**Goal:** To Create a Fullstack Flutter app from scratch (ofcourse following several tutorials) using the below mentioned frameworks.
+**Goal:** To Create a Fullstack Flutter app from scratch (ofcourse following several tutorials) using the below mentioned frameworks.I tried commenting highly the parts that might confuse beginners.
 
 **Frameworks:** We will be using Flutter and Firebase,other Frameworks or libraries might be integrated later on if need be.
 
@@ -22,7 +22,16 @@
 **Progress as of 6th january:See the screenshots below;**
 
 
+![Image description](https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot1.jpg?raw=true)
+
+![Image description](https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot2.jpg?raw=true)
+
+![Image description](https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot3.jpg?raw=true)
+
+
 **Get Started:**
+The assumption is,you've already set up Your PC for Flutter mobile app development and are familiar with the basics of Flutter.
+
 ```
 git clone https://github.com/WALLETYKE/wallety
 flutter pub get

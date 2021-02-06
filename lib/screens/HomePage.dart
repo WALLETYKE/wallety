@@ -1,5 +1,7 @@
+//import 'package:auto_route/auto_route.dart';
+//import 'package:wallety/router/router.dart';
 import 'package:flutter/material.dart';
-import 'package:wallety/screens/profile.dart';
+//import 'package:wallety/screens/profile.dart';
 
 class HomePage extends StatefulWidget {
   @override

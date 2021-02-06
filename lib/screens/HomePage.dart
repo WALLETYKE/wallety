@@ -1,7 +1,7 @@
 //import 'package:auto_route/auto_route.dart';
 //import 'package:wallety/router/router.dart';
 import 'package:flutter/material.dart';
-//import 'package:wallety/screens/profile.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,6 +12,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
+        drawer: Drawer(),
         body: Stack(
         children: [
           Column(
@@ -404,6 +406,44 @@ Container buildCategoryCard(
             )
           ],
         ),
+      ),
+    );
+  }
+}
+
+
+/*THe design of the drawer  goes here */
+
+class Drawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext contx) {
+    return Container(
+      color: Colors.amber[600],
+      child: Column(
+        children: <Widget>[
+          AppBar(automaticallyImplyLeading: false, title: Text('menu')),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: () {
+              Navigator.pushReplacementNamed(contx, '/home');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.person),
+            title: Text('My Profile'),
+            onTap: () {
+              Navigator.pushReplacementNamed(contx, '/profile');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.school),
+            title: Text('My Education'),
+            onTap: () {
+              Navigator.pushReplacementNamed(contx, '/education');
+            },
+          ),
+        ],
       ),
     );
   }

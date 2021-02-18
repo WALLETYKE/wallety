@@ -88,7 +88,7 @@ class Profile extends StatelessWidget {
               height: 15,
             ),
             Text(
-              "Saloonist || Baby Sitter"
+              "Travelling | Cooking | Reading"
               ,style: TextStyle(
                 fontSize: 18.0,
                 color:Colors.black45,
@@ -209,7 +209,7 @@ class Profile extends StatelessWidget {
                       constraints: BoxConstraints(maxWidth: 100.0,maxHeight: 40.0,),
                       alignment: Alignment.center,
                       child: Text(
-                        "Portfolio",
+                        "Challenges",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12.0,

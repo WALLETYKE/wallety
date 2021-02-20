@@ -26,17 +26,10 @@
 **Progress as of 6th january:See the screenshots below;**
 
 <p float="left">
-  <img src="https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot1.jpg?raw=true" width="100" />
-  <img src="https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot2.jpg?raw=true" width="100" /> 
-  <img src="https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot3.jpg?raw=true" width="100" />
+  <img src="https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot1.jpg?raw=true" width="120" />
+  <img src="https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot2.jpg?raw=true" width="120" /> 
+  <img src="https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot3.jpg?raw=true" width="120" />
 </p>
-
-# ![Image description](https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot1.jpg?raw=true)
-
-# ![Image description](https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot2.jpg?raw=true)
-
-# ![Image description](https://github.com/WALLETYKE/wallety/blob/master/screenshots/Screenshot3.jpg?raw=true)
-
 
 **Get Started:**
 The assumption is,you've already set up Your PC for Flutter mobile app development and are familiar with the basics of Flutter.

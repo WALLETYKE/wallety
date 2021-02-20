@@ -4,6 +4,10 @@
 
 **Frameworks:** We will be using Flutter and Firebase,other Frameworks or libraries might be integrated later on if need be.
 
+
+# Donate To This Project
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=SATUJHPS3GFJ8)
+
 **Features;**
 * 1.Tracking and analysing Expenses 
 * 2.User Profiles 
@@ -38,8 +42,6 @@ flutter pub get
 flutter run
 ```
 
-# Donate To This Project
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=SATUJHPS3GFJ8)
 
 
 

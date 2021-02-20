@@ -38,6 +38,9 @@ flutter pub get
 flutter run
 ```
 
+# Donate To This Project
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=SATUJHPS3GFJ8)
+
 
 
 This Project Started on 1st February 2020 and we are hoping to complete the design part by 30th February.
